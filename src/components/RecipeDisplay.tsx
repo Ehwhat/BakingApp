@@ -191,6 +191,18 @@ Source: ${window.location.href}`;
           </div>
         </div>
 
+        <section className="ingredients-section mobile-ingredients">
+          <h2>Ingredients</h2>
+          <ul className="ingredients-list">
+            {recipe.ingredients.map((ingredient, index) => (
+              <li key={index} className="ingredient-item">
+                <span className="ingredient-measure">{ingredient.measure}</span>
+                <span className="ingredient-name">{ingredient.name}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
         <div className="recipe-details">
           <section className="instructions-section">
             <h2>Instructions</h2>
@@ -218,14 +230,14 @@ Source: ${window.location.href}`;
             </ol>
           </section>
 
-          <section className="ingredients-section">
+          <section className="ingredients-section desktop-ingredients">
             <h2>Ingredients</h2>
             <ul className="ingredients-list">
               {recipe.ingredients.map((ingredient, index) => (
                 <li key={index} className="ingredient-item">
                   <span className="ingredient-measure">{ingredient.measure}</span>
                   <span className="ingredient-name">{ingredient.name}</span>
-                </li>
+              </li>
               ))}
             </ul>
           </section>

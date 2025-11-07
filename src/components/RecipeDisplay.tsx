@@ -138,7 +138,7 @@ Source: ${window.location.href}`;
                 <p>Image not available</p>
               </div>
             )}
-            <div className="image-overlay">
+            <div className={`image-overlay ${imageError ? 'no-image' : ''}`}>
               <h1 className="recipe-title">{recipe.name}</h1>
               <div className="recipe-meta">
                 <span className="recipe-category">{recipe.category}</span>

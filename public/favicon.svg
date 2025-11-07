@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="cupcakeBase" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A0522D;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="frosting" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB6C1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFC0CB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF69B4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Cupcake wrapper -->
+  <path d="M8 16 L24 16 L22 28 L10 28 Z" fill="url(#cupcakeBase)" stroke="#654321" stroke-width="0.5"/>
+  
+  <!-- Cupcake base pattern -->
+  <rect x="10" y="18" width="1" height="8" fill="#654321" opacity="0.3"/>
+  <rect x="13" y="18" width="1" height="8" fill="#654321" opacity="0.3"/>
+  <rect x="16" y="18" width="1" height="8" fill="#654321" opacity="0.3"/>
+  <rect x="19" y="18" width="1" height="8" fill="#654321" opacity="0.3"/>
+  <rect x="22" y="18" width="1" height="8" fill="#654321" opacity="0.3"/>
+  
+  <!-- Frosting swirl -->
+  <ellipse cx="16" cy="14" rx="8" ry="3" fill="url(#frosting)"/>
+  <ellipse cx="14" cy="11" rx="5" ry="2.5" fill="url(#frosting)"/>
+  <ellipse cx="18" cy="9" rx="4" ry="2" fill="url(#frosting)"/>
+  <ellipse cx="16" cy="7" rx="3" ry="1.5" fill="url(#frosting)"/>
+  
+  <!-- Cherry on top -->
+  <circle cx="16" cy="6" r="1.5" fill="#DC143C"/>
+  <ellipse cx="16" cy="5.5" rx="1" ry="0.5" fill="#FF6347"/>
+  
+  <!-- Cherry stem -->
+  <rect x="15.8" y="4" width="0.4" height="2" fill="#228B22"/>
+</svg>
